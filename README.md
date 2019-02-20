@@ -1,15 +1,24 @@
 # XinRouter
+[![](https://jitpack.io/v/wzx54321/xin-router.svg)](https://jitpack.io/#wzx54321/xin-router)
 android组件化轻量级路由调用,支持组件件方法调用。  
 使用编译注解，绑定入口类和调用的方法。
 
 ### 引入项目：
-  目前源码提供，之后提供gradle 配置
-  
-  使用绑定注解的Module引用
-  `````
-   implementation project(":xinrouter")
-   annotationProcessor project(":xinrouter_compiler")  
-  `````
+  方法一：远程引入
+
+    `````
+     implementation 'com.github.wzx54321:xin-router:1.0.1'
+     // 定义入口方法的模块添加：
+     annotationProcessor 'com.github.wzx54321:xinrouter_compiler:1.0.5'
+    `````
+
+
+    方法二：源码引用:
+    `````
+     implementation project(":xinrouter")
+     // 使用绑定注解的Module引用
+     annotationProcessor project(":xinrouter_compiler")
+    `````
 
 ### 调用方法：
 

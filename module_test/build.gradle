@@ -13,11 +13,7 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-       /* javaCompileOptions {
-            annotationProcessorOptions {
-                includeCompileClasspath true
-            }
-        }*/
+
 
     }
 
@@ -38,6 +34,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation project(":xinrouter")
+    implementation 'com.github.wzx54321:xin-router:1.0.1'
     annotationProcessor 'com.github.wzx54321:xinrouter_compiler:1.0.5'
 }

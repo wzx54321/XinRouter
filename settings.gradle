@@ -1,1 +1,1 @@
-include ':app', ':xinrouter',  ':module_test', ':sub_module2'
+include ':app', ':module_test', ':sub_module2'

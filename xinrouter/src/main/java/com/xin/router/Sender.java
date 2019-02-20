@@ -20,17 +20,22 @@ public class Sender {
         Object[] parameters = null;
         String[] parameter_keys;
         //  3. 匹配对应的参数
-        String parameterKeys = (String) methodName.get(RouterUtils.getParameterKey(path));
 
-        if (!RouterUtils.isEmpty(parameterKeys)) {
-            parameter_keys = parameterKeys.split(",");
-            int len = parameter_keys.length;
-            parameters = new Object[len];
-            for (int i = 0; i < len; i++) {
-                parameters[i] =
-                        parameter.get(parameter_keys[i]);
+        if(parameter!=null){
+
+            String parameterKeys = (String) methodName.get(RouterUtils.getParameterKey(path));
+            if (!RouterUtils.isEmpty(parameterKeys)) {
+                parameter_keys = parameterKeys.split(",");
+                int len = parameter_keys.length;
+                parameters = new Object[len];
+                for (int i = 0; i < len; i++) {
+                    parameters[i] =
+                            parameter.get(parameter_keys[i]);
+                }
             }
         }
+
+
         try {
             return method.invoke(realTarget, parameters);
         } catch (IllegalAccessException e) {

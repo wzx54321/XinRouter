@@ -1,0 +1,1 @@
+include ':app', ':xinrouter', ':xinrouter_annotations',  ':xinrouter_compiler', ':module_test', ':sub_module2'

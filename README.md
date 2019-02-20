@@ -1,8 +1,7 @@
 # XinRouter
 xin-router:[![](https://jitpack.io/v/wzx54321/xin-router.svg)](https://jitpack.io/#wzx54321/xin-router)    xinrouter_compiler:[![](https://jitpack.io/v/wzx54321/xinrouter_compiler.svg)](https://jitpack.io/#wzx54321/xinrouter_compiler)   
 
-android组件化轻量级路由调用,支持组件件方法调用。  
-使用编译注解，绑定入口类和调用的方法。
+android组件化轻量级路由调用,支持组件件方法调用。使用编译注解，绑定入口类和调用的方法,支持组件化，组件间调用。
 
 ### 引入项目：
   方法一：远程引入  
